@@ -28,5 +28,67 @@
       sapiente asperiores pariatur, rem laboriosam voluptatibus reprehenderit
       <em>reiciendis tempore dolores. Alias, delectus.</em>
     </p>
+    <!-- tags are classified into two according to display value in the browser: block elements(eg: h1 - h6, p tag), inline elements(eg: anchor tag) -->
+    <!-- a: anchor tag, to add links -->
+    <a href="https://www.google.com/">Google</a>
+    <!-- target: to specify where to open the link -->
+    <a href="https://www.google.com/" target="_blank">Google</a>
+    <!-- list -->
+    <!-- ordered list -->
+    <!-- type: to change 1,2,3 -> A,B,C etc -->
+    <ol type="1">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+    <!-- unordered list, needed css to style the bullet-->
+    <ul>
+      <li>Messi</li>
+      <li>Neymar</li>
+      <li>Xavi</li>
+    </ul>
+    <!-- description list: list, title, data   -->
+    <dl>
+      <dt>Coffee ingredients</dt>
+      <dd>Water</dd>
+      <dd>Milk</dd>
+      <dd>Coffee powder</dd>
+    </dl>
+    <!-- Table Creation -->
+    <!-- border tag is not commonly used in html it is used in css -->
+    <!-- th tag act as td but with bold letters. mainly used as heading -->
+    <!-- td(column) and th tags are wraped in tr(table row) -->
+    <!-- thead and tbody are wraped in table tag -->
+    <!-- colspan and rowspan used in td and th-->
+    <!-- colspan to merge columns -->
+    <!-- rowspan to merge rows -->
+    <table border="1">
+      <thead>
+        <th colspan="2">Roll no</th>
+
+        <th>Mark</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">1</td>
+
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Rahul</td>
+          <td>400</td>
+        </tr>
+        <tr>
+          <td rowspan="2">3</td>
+          <td>Raj</td>
+          <td>405</td>
+        </tr>
+        <tr>
+          <td>Ra</td>
+          <td>410</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
