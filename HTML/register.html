@@ -1,11 +1,124 @@
+<!-- just for notes:
+ semantic tags: describe its meaning to both developer and browser - header tag, nav tag, section tag -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
-</head>
-<body>
-    
-</body>
+    <!-- font awesome is an third-party kit for including icons in website -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <!-- background: to give background image to body
+       bgcolor: to give background image
+       both of them are not really used in html..css is used for this purpose -->
+  <body background="https://i.pinimg.com/736x/13/af/ee/13afee753e978bb5dba81469dbf1fce7.jpg">
+    <!-- id is user to relate input with the label so that if we click 
+     on the label the input bar also selected.The same id is given in "for" of label -->
+    <center>
+      <i class="fa-solid fa-house"></i>
+      <h1>Registration Form</h1>
+      <!-- feildset: to give border but this method is not used, it is defined in css -->
+      <fieldset>
+        <form>
+          <!-- User Name -->
+          <label for="username"
+            >User Name:
+            <input id="username" type="text" placeholder="User Name" />
+          </label>
+          <br />
+          <br />
+          <!-- password -->
+          <label for="pswd"
+            >Password:
+            <input id="pswd" type="password" placeholder="Password" />
+          </label>
+          <br />
+          <br />
+          <!-- Email -->
+          <label for="email"
+            >Email:
+            <input id="email" type="email" placeholder="email id" />
+          </label>
+          <br />
+          <br />
+          <!-- Expirence in number -->
+          <label for="exp"
+            >Expirence:
+            <input id="exp" type="number" placeholder="Expirence" />
+          </label>
+          <br />
+          <br />
+          <!-- address in textarea(rows and cols are used to adjust the size of textarea) -->
+          <label for="address"
+            >Address:
+            <textarea
+              id="address"
+              rows="10"
+              cols="10"
+              placeholder="Address"
+            ></textarea>
+          </label>
+          <br />
+          <br />
+          <!-- DOB -->
+          <label for="dob"> DOB: <input type="date" id="dob" /> </label>
+          <br />
+          <br />
+          <!-- Gender -->
+          <label for="Gender">Gender:</label>
+          <input type="radio" id="Male" name="gender" />
+          <label for="Male">Male</label>
+          <input type="radio" id="Female" name="gender" />
+          <label for="Female" id="Female">Female</label>
+          <input type="radio" id="Others" name="gender" />
+          <label for="Others" id="Others">Others</label>
+          <br />
+          <br />
+          <!-- hobbies -->
+          <label for="">Hobbies</label>
+          <input id="h1" type="checkbox" />
+          <label for="h1">Football</label>
+          <input id="h2" type="checkbox" />
+          <label for="h2">Movies</label>
+          <input id="h3" type="checkbox" />
+          <label for="h3">Cricket</label>
+          <br />
+          <br />
+          <!-- drop down -->
+          <label for="location">Location:</label>
+          <select id="location">
+            <!-- disabled: to not able to choose that option
+                 hidden: hide that option from dropdown
+                 selected: to initially select that option -->
+            <option disabled hidden selected>choose location</option>
+            <option value="kochi">Kochi</option>
+            <option value="malappuram">Malappuram</option>
+            <option value="Kollam">Kollam</option>
+            <option value="kottayam">Kottayam</option>
+          </select>
+          <br />
+          <br />
+          <!-- upload file -->
+          <label for="cv"
+            >CV:
+            <input type="file" id="cv" />
+          </label>
+          <br />
+          <br />
+          <!-- range -->
+          <label for="h1"
+            >HTML:
+            <input type="range" id="h1" />
+          </label>
+          <!-- button -->
+          <br />
+          <br />
+          <buttn>Submit</button>
+          <!-- button 2nd way  -->
+          <input type="button" value="Submit" />
+        </form>
+      </fieldset>
+    </center>
+  </body>
 </html>
