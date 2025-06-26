@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+  </head>
+  <body>
+    <!-- tags like h1 is block element so it can be centered using text-align but,
+         tags which are block(img etc) cannot be centered like that (one method is 
+         wrap in div and use text-algn style for div) -->
+    <!-- inline CSS(Cascading Style Sheet) -->
+    <style>
+      img {
+        width: 250px;
+        border: solid 10px red;
+        border-radius: 10px;
+      }
+      div {
+        text-align: center;
+      }
+    </style>
+    <h1 style="color: red; font-size: 50px; text-align: center">CSS</h1>
+
+    <!-- internal CSS -->
+    <div>
+      <img
+        src="https://i.pinimg.com/736x/51/ef/80/51ef803900583981008e19954df1150c.jpg"
+        alt="image of a car"
+      />
+    </div>
+  </body>
 </html>
