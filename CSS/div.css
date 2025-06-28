@@ -1,0 +1,10 @@
+div {
+  background-color: cadetblue;
+  height: 250px;
+  width: 250px;
+}
+/* basic position not used */
+#d2 {
+  margin-left: 280px;
+  margin-top: -250px;
+}

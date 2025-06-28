@@ -1,4 +1,12 @@
 h1 {
   border: solid 1px;
   margin: 20px;
+  padding: 60px;
+}
+/* padding and margin are used for block elements . for inline element it may misbehave */
+/* for margin in inline element only work in left and right */
+a {
+  border: solid 1px;
+  margin: 50px;
+  padding: 50px;
 }
