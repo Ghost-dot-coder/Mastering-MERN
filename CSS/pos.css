@@ -1,0 +1,20 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* postion:sataic, it is default positioning
+   position:fixed, the element will be fixed at the postion and others scroll
+ */
+header {
+  background-color: red;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+}
+span {
+  font-size: 45px;
+  font-weight: 600;
+}
+h1 {
+  padding-top: 150px;
+}

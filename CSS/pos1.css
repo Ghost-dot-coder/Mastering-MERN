@@ -1,0 +1,25 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* position: absolute, the element will be moved to the postion of its relative element(if multiple child element
+             then it all will overlap)
+   position: relative, to change the default relative element while using postion absolute */
+.parent {
+  position: relative;
+}
+.child {
+  border: solid;
+  width: 500px;
+  height: auto;
+  background-color: blanchedalmond;
+  position: absolute;
+  top: 0px;
+}
+.img1 {
+  width: 100%;
+}
+
+#d2 {
+  z-index: 1;
+}
