@@ -1,5 +1,6 @@
-#top{
-    background-color: red;
-    position: sticky;
-    top: 50px;
+/* position:sticky, when this property element reaches while scrolling it will stay on screen even after scroll beyond that */
+#top {
+  background-color: red;
+  position: sticky;
+  top: 50px;
 }
