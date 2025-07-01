@@ -1,0 +1,21 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.child{
+    border: solid;
+    width: 400px;
+    height: 300;
+}
+img{
+    width: 100%;
+}
+.parent{
+    border: solid;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    border: solid;
+    align-items: center;
+}
