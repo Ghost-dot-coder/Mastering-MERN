@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav {
+  background-color: rgb(234, 215, 215);
+  width: 100%;
+}
+footer {
+  background-color: rgb(243, 231, 216);
+}
+.porche-icon {
+  width: 50px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+.list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.porche {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  align-items: center;
+  background-color: black;
+}
+.porcheimg {
+  width: 400px;
+}
+.porche-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.text-porche {
+  width: 20%;
+}
+.dic-porsche {
+  background-color: rgb(0, 0, 0);
+  padding: 30px;
+}
+p {
+  color: aliceblue;
+  font-size: larger;
+}
+.full-p {
+  width: 100%;
+  height: auto;
+}
+.full {
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+}
+.porche-text-end {
+  text-align: center;
+}

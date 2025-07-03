@@ -4,3 +4,70 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+#container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+}
+.logo {
+  width: 100px;
+}
+.list-itmes {
+  list-style: none;
+  display: inline;
+  margin: 0px 20px;
+}
+.links {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+/* pseudo class */
+.links:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.home-content {
+  margin: 13% 0px 0px 8%;
+}
+#username {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 20px;
+}
+#lname {
+  font-family: "Dancing Script", cursive;
+  color: green;
+}
+#user-details {
+  line-height: 1.2;
+}
+#download {
+  display: inline-block;
+  background-color: black;
+  margin-top: 30px;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+.home-img{
+  width: 45%;
+  height: 75%;
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+}
+.group1{
+  position: absolute;
+  height: 100%;
+  bottom: 0px;
+  left: 50%;
+}
