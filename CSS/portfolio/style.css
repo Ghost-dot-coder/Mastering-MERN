@@ -58,16 +58,66 @@ nav {
   padding: 10px;
   text-decoration: none;
 }
-.home-img{
+.home-img {
   width: 45%;
   height: 75%;
   position: absolute;
   right: 30px;
   bottom: 0px;
 }
-.group1{
+.group1 {
   position: absolute;
   height: 100%;
   bottom: 0px;
   left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 2s, left 1s;
+}
+
+.home-img:hover #shape {
+  bottom: 90px;
+}
+
+.home-img:hover #girl {
+  left: 30%;
+}
+#about {
+  margin: 19% 8% 0px 8%;
+}
+.sectionHead {
+  text-align: center;
+}
+.mainHead {
+  font-size: 30px;
+}
+.subhead {
+  font-size: 20px;
+  color: blue;
+}
+.aboutBody {
+  margin-top: 20px;
+  display: grid;
+  /* grid-template-columns: auto auto; */
+  /* another method for grid-template-columns: auto auto;  */
+  /* grid-template-columns: repeat(2,1fr);(2- number of columns, 1fr- space alloted) */
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.img1 {
+  width: 80%;
+}
+.aboutConent {
+  font-size:20px;
+  text-align: justify;
+}
+.Information{
+  margin-top: 1.3rem ;
+}
+.infox{
+  margin-bottom:10px ;
+  display: flex;
+  align-items: center;
+}
+.infox>span{
+  margin-left: 1rem;
 }
