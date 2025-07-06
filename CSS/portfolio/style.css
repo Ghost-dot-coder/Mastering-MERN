@@ -107,17 +107,17 @@ nav {
   width: 80%;
 }
 .aboutConent {
-  font-size:20px;
+  font-size: 20px;
   text-align: justify;
 }
-.Information{
-  margin-top: 1.3rem ;
+.Information {
+  margin-top: 1.3rem;
 }
-.infox{
-  margin-bottom:10px ;
+.infox {
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
-.infox>span{
+.infox > span {
   margin-left: 1rem;
 }
