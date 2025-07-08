@@ -170,3 +170,81 @@ nav {
 .mySkill {
   width: 100%;
 }
+#contact {
+  margin: 8% 8% 0px 8%;
+}
+.iconCollection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0px 10px;
+}
+
+.brands {
+  color: black;
+  font-size: 2rem;
+}
+.icon:hover {
+  background-image: linear-gradient(to bottom right, blue, green, yellow);
+}
+/* animation: in the main element write the name of animation and duration */
+.icon:hover .brands {
+  color: white;
+  animation: rotation 3s;
+}
+/* create a animtion like below using same name defined in main element. always use 0 to 100% 
+to specify each keyframe of animation */
+@keyframes rotation {
+  0% {
+    transform: rotate(30deg);
+  }
+  20% {
+    transform: rotate(-30deg);
+  }
+  40% {
+    transform: rotate(30deg);
+  }
+  60% {
+    transform: rotate(-30deg);
+  }
+  80% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+footer {
+  margin-top: 8%;
+}
+#copyright {
+  text-align: center;
+  font-weight: 600;
+}
+.upArrow {
+  float: right;
+  margin: -40px 20px 20px 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  width: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: bisque;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #86e686;
+  border-radius: 10px;
+}

@@ -20,6 +20,13 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Lavishly+Yours&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+MX+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
+    <!-- animate.css works initially when page loads-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- aos: this works when scrolling of page, there is also a script file just below body closs tag  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div id="container">
@@ -39,7 +46,12 @@
       <section id="home">
         <!-- home-content -->
         <div class="home-content">
-          <h1 id="username">I'm Maria <span id="lname">Joe</span></h1>
+          <!-- this animation only works when page initially loads, there should be two class name :
+           one as mentioned below and other as the name of animation taken from the animate website as 
+           shown below  -->
+          <h1 class="animate__animated animate__slideInDown" id="username">
+            I'm Maria <span id="lname">Joe</span>
+          </h1>
           <p id="user-details">
             This is my official portfolio website to showcase my journey and
             work in Photography
@@ -76,7 +88,8 @@
           <span class="subhead">Introduction</span>
         </div>
         <div class="aboutBody">
-          <div class="aboutImg">
+          <!-- using aos animation to fade in image while scrolling, it should be applied to the div not the image -->
+          <div data-aos="fade-right" class="aboutImg">
             <img
               class="img"
               src="./images/women-removebg-preview.png"
@@ -115,44 +128,65 @@
         </div>
         <div class="skillContent">
           <div class="progressBar">
+            <!-- added animation aos for progress bar -->
             <!-- Bar 1 -->
             <div class="bars">
               <h3 class="barHead">Portraits</h3>
               <span class="barPercent">92%</span>
               <div class="baseBar"></div>
-              <div class="baseBar portBar"></div>
+              <div
+                class="baseBar portBar"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              ></div>
             </div>
             <!-- Bar 2 -->
             <div class="bars">
               <h3 class="barHead">Landscape</h3>
               <span class="barPercent">80%</span>
               <div class="baseBar"></div>
-              <div class="baseBar landBar"></div>
+              <div
+                class="baseBar landBar"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              ></div>
             </div>
             <!-- Bar 3 -->
             <div class="bars">
               <h3 class="barHead">Editing</h3>
               <span class="barPercent">88%</span>
               <div class="baseBar"></div>
-              <div class="baseBar editBar"></div>
+              <div
+                class="baseBar editBar"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              ></div>
             </div>
             <!-- Bar 4 -->
             <div class="bars">
               <h3 class="barHead">Wildlife</h3>
               <span class="barPercent">72%</span>
               <div class="baseBar"></div>
-              <div class="baseBar wildBar"></div>
+              <div
+                class="baseBar wildBar"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              ></div>
             </div>
           </div>
-          <div class="skillImage">
+          <div data-aos="fade-left" class="skillImage">
             <img class="mySkill" src="./images/skill-image.jpg" alt="Skills" />
           </div>
         </div>
       </section>
       <section id="contact">
         <div class="sectionHead">
-          <h2 class="mainHead">Skills</h2>
-          <span class="subhead">My Skills</span>
+          <h2 class="mainHead">Contact</h2>
+          <span class="subhead">My Contact</span>
         </div>
         <div class="iconCollection">
           <!-- linkdin -->
@@ -163,13 +197,15 @@
           </div>
           <!-- Github -->
           <div class="icon">
-            <a href="" target="_blank"
+            <a href="https://github.com/Ghost-dot-coder" target="_blank"
               ><i class="fa-brands fa-github brands"></i
             ></a>
           </div>
           <!-- twitter -->
           <div class="icon">
-            <a href="" target="_blank"><i class="fa-brands fa-x brands"></i></a>
+            <a href="" target="_blank"
+              ><i class="fa-brands fa-twitter brands"></i
+            ></a>
           </div>
           <!-- Instagram -->
           <div class="icon">
@@ -179,6 +215,21 @@
           </div>
         </div>
       </section>
+      <footer>
+        <p id="copyright">
+          &copy; Maria Joe Photography portfolio - June 2024, &reg; All rights
+          Reserved
+        </p>
+        <!-- upArrow -->
+        <div class="icon upArrow">
+          <a href="#container"><i class="fa-solid fa-angle-up brands"></i></a>
+        </div>
+      </footer>
     </div>
   </body>
+  <!-- aos script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
