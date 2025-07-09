@@ -35,7 +35,8 @@ nav {
 }
 
 .home-content {
-  margin: 13% 0px 0px 8%;
+  margin: 0% 0px 0px 8%;
+  padding-top: 13%;
 }
 #username {
   font-size: 50px;
@@ -82,7 +83,8 @@ nav {
   left: 30%;
 }
 #about {
-  margin: 19% 8% 0px 8%;
+  margin: 20% 8% 0px 8%;
+  padding-top: 5%;
 }
 .sectionHead {
   text-align: center;
@@ -123,6 +125,7 @@ nav {
 }
 #skill {
   margin: 8% 8% 0% 8%;
+  padding-top: 5%;
 }
 .skillContent {
   display: grid;
@@ -172,6 +175,7 @@ nav {
 }
 #contact {
   margin: 8% 8% 0px 8%;
+  padding-top: 5%;
 }
 .iconCollection {
   display: flex;
