@@ -1,0 +1,67 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 1.3rem 10%;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+.logo {
+  font-size: 2.3rem;
+  color: blue;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 2.5rem;
+}
+.navbar a {
+  font-size: 1.15rem;
+  color: rgb(30, 92, 198);
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 2.5rem;
+}
+.contents {
+  padding-top: 80px;
+}
+h1 {
+  color: red;
+}
+p {
+  line-height: 1.2;
+  font-weight: 500;
+}
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.item {
+  width: 300px;
+  height: 350px;
+  border: solid 1px;
+}
+.group1 {
+  width: 100%;
+  height: 300px;
+}
+
+/* only works in that specified intervel when using and min-max */
+@media (max-width: 760px) and (min-width: 480px) {
+  h1 {
+    color: blue;
+  }
+  p {
+    font-weight: 700;
+    line-height: 1.75;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+}
