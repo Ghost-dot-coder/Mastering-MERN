@@ -21,6 +21,20 @@
   font-weight: 600;
   margin-left: 2.5rem;
 }
+
+#check{
+  display: none;
+}
+.icons{
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: blue;
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+  display: none;
+}
+
 .navbar a {
   font-size: 1.15rem;
   color: rgb(30, 92, 198);
@@ -52,8 +66,28 @@ p {
   height: 300px;
 }
 
-/* only works in that specified intervel when using and min-max */
-@media (max-width: 760px) and (min-width: 480px) {
+/* only works in that specified intervel when using and min-max (@media (max-width: 760px)and (min-width: 480px))*/
+@media (max-width: 760px)  {
+  .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: bisque;
+    display: none;
+  }
+  .navbar a{
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1.5rem 0px;
+  }
+  .icons{
+    display: flex;
+  }
+  #close-icon{
+    display: none;
+  }
   h1 {
     color: blue;
   }
