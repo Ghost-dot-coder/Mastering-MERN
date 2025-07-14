@@ -22,10 +22,10 @@
   margin-left: 2.5rem;
 }
 
-#check{
+#check {
   display: none;
 }
-.icons{
+.icons {
   font-size: 2.4rem;
   font-weight: 600;
   color: blue;
@@ -67,8 +67,8 @@ p {
 }
 
 /* only works in that specified intervel when using and min-max (@media (max-width: 760px)and (min-width: 480px))*/
-@media (max-width: 760px)  {
-  .navbar{
+@media (max-width: 760px) {
+  .navbar {
     position: absolute;
     top: 100%;
     left: 0;
@@ -76,17 +76,26 @@ p {
     background-color: bisque;
     display: none;
   }
-  .navbar a{
+  .navbar a {
     display: block;
     text-align: center;
     font-size: 1.1rem;
     margin: 1.5rem 0px;
   }
-  .icons{
+  .icons {
     display: flex;
   }
-  #close-icon{
+  #close-icon {
     display: none;
+  }
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+  #check:checked ~ .navbar {
+    display: block;
   }
   h1 {
     color: blue;
