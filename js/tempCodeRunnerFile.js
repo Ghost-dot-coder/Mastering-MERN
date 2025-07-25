@@ -1,11 +1,8 @@
-m = "";
 
-// while (0 < num) {
-//   n = num % 10;
-//   m += n;
-//   num = Math.floor(num);
+// var reverseNum = "";
+// while (num > 0) {
+//   let lastDigit = num % 10;
+//   reverseNum += lastDigit;
+//   num = Math.floor(num / 10);
 // }
-
-// console.log(m);
-
-// //
+// console.log(reverseNum);
