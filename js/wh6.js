@@ -4,3 +4,9 @@
 // logic
 // output
 // 24  369  4936
+
+
+prompt = require("prompt-sync")({ sigint: true });
+var input = prompt("Enter number to reverse: ");
+num = Number(input);
+
