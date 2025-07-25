@@ -1,5 +1,11 @@
-if (age > 17) {
-//   console.log(`Eligible for voting`);
-// } else {
-//   console.log(`Not eligible`);
+m = "";
+
+// while (0 < num) {
+//   n = num % 10;
+//   m += n;
+//   num = Math.floor(num);
 // }
+
+// console.log(m);
+
+// //
