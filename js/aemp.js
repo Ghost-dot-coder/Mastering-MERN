@@ -12,44 +12,35 @@ employee = [
 ];
 
 // 1. Print all Employee Name
-for (let emp of employee) {
-  console.log(emp[1]);
-}
+// ------------forEach-----------
+console.log("-----emp names using for each-------");
+
+employee.forEach((emp) => {
+  console.log(emp);
+});
+
 // 2. print Total number of employees
 console.log(`total no of employees: ${employee.length}`);
 
 // 3. print developer employee details :filter
-for (let dev of employee) {
-  if (dev[2] == "developer") {
-    console.log(dev);
-  }
-}
+console.log("-----Developers-------");
+employee
+  .filter((emp) => emp[2] == "developer")
+  .forEach((emp) => console.log(emp[1]));
+
 // 4. print employee whose salary > 30000  :filter
-console.log("sal Greater:");
+console.log("-----Sal greater-------");
+employee.filter((emp) => emp[4] > 30000).forEach((emp) => console.log(emp[1]));
 
-for (let sal of employee) {
-  if (sal[4] > 30000) {
-    console.log(`${sal[1]}`);
-  }
-}
 // 5. print details of employee Laisha
+console.log("-----Find Laisha-------");
+const empname = employee.find((item) => item[1] == "Laisha");
+console.log(empname);
 
-for (let name of employee) {
-  if (name[1] == "Laisha") {
-    console.log(`Laisha: ${name}`);
-  }
-}
 // 6. Sort employee based on their salary in decending order
-console.log("Salary in descending order");
+console.log("-------Salary in descending order---------");
+employee.sort((a, b) => b[4] - a[4]).forEach((emp) => console.log(emp));
 
-employee.sort((a, b) => b[4] - a[4]);
-for (let asc of employee) {
-  console.log(asc);
-}
 // 7. sort employee based on their experience in ascending order
-console.log("Expirence in ascending order");
-
-employee.sort((a, b) => a[5] - b[5]);
-for (let exp of employee) {
-  console.log(exp);
-}
+console.log("---------Expirence in ascending order-----------");
+employee.sort((a, b) => a[5] - b[5]).forEach((exp) => console.log(exp));
