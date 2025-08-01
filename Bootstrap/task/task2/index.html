@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Gravitas+One&family=Lavishly+Yours&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Playwrite+FR+Trad:wght@100..400&family=Playwrite+MX+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=WindSong:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#">Occasio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="na nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="na nav-link active" aria-current="page" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="na nav-link active" aria-current="page" href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="na nav-link active" aria-current="page" href="#events"
+                >Events</a
+              >
+            </li>
+          </ul>
+          <button class="btn btn-outline-dark" type="submit">Contact Us</button>
+          <button class="btn btn-outline-dark mx-2" type="submit">
+            Upcoming Events
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- header -->
+    <header id="home" class="position-relative">
+      <img
+        class="bgHeader img-fluid w-100"
+        src="./assets/images/bg-1.jpg"
+        alt="Background"
+        style="height: 100vh; object-fit: cover"
+      />
+
+      <div
+        class="headerContent position-absolute top-50 start-50 translate-middle text-center text-light px-3"
+      >
+        <h1 class="display-4 display-md-3 display-sm-5 main-head">
+          Crafting Moments, Creating Memories
+        </h1>
+        <h2 class="h4 h5 mt-2">Because every moment deserves perfection</h2>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="ani row text-center mb-4">
+          <div class="col">
+            <h2 class="fw-bold">Why Choose Us</h2>
+            <p class="text-muted">
+              We make your special occasions seamless, stylish, and
+              unforgettable.
+            </p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="ani col-md-3">
+            <div class="p-4 border rounded bg-white anim h-100">
+              <i class="bi bi-people-fill display-4 text-primary"></i>
+              <h5 class="mt-3">Experienced Team</h5>
+              <p class="text-muted">
+                Decades of expertise ensuring flawless execution.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-4 border rounded bg-white anim h-100">
+              <i class="bi bi-cash-stack display-4 text-success"></i>
+              <h5 class="mt-3">Transparent Pricing</h5>
+              <p class="text-muted">
+                Affordable packages with no hidden charges.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-4 border rounded bg-white anim h-100">
+              <i class="bi bi-gift-fill display-4 text-danger"></i>
+              <h5 class="mt-3">Custom Packages</h5>
+              <p class="text-muted">
+                Tailor-made plans for every unique occasion.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-4 border rounded bg-white anim h-100">
+              <i class="bi bi-headset display-4 text-warning"></i>
+              <h5 class="mt-3">24/7 Support</h5>
+              <p class="text-muted">Always available to assist you anytime.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="fw-bold">Our Featured Services</h2>
+            <p class="text-muted">
+              From grand weddings to corporate gatherings and private parties,
+              we plan it all with perfection.
+            </p>
+          </div>
+        </div>
+
+        <!-- Event Cards -->
+        <div class="row g-4" data-aos="fade-up">
+          <!-- Wedding Card -->
+          <div class="col-md-4">
+            <div class="card h-100 anim border-0">
+              <img
+                src="./assets/images/card-wedding.jpg"
+                class="card-img-top"
+                alt="Wedding Event"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Wedding Events</h5>
+                <p class="card-text text-muted">
+                  Make your special day truly magical with our end-to-end
+                  wedding planning services.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Corporate Event Card -->
+          <div class="col-md-4">
+            <div class="card h-100 anim border-0">
+              <img
+                src="./assets/images/corporate-event.jpg"
+                class="card-img-top"
+                alt="Corporate Event"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Corporate Events</h5>
+                <p class="card-text text-muted">
+                  Professional, well-coordinated corporate events to reflect
+                  your brand values.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Private Party Card -->
+          <div class="col-md-4">
+            <div class="card h-100 anim border-0">
+              <img
+                src="./assets/images/party-wallpaper.jpg"
+                class="card-img-top"
+                alt="Private Party"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Private Parties</h5>
+                <p class="card-text text-muted">
+                  Whether it's a birthday or an intimate gathering, we make it
+                  special and stress-free.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Events Section -->
+    <section id="events" class="py-5">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="fw-bold">Upcoming Events</h2>
+            <p class="text-muted">
+              Join our latest events and make lasting memories.
+            </p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <!-- Event Card 1 -->
+          <div class="col-md-4 " data-aos="fade-up-right">
+            <div class="card h-100 anim border-0">
+              <img
+                src="./assets/images/wed-2.jpg"
+                class="card-img-top"
+                alt="Wedding Expo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Wedding Expo 2025</h5>
+                <p class="card-text text-muted">
+                  Discover top wedding vendors and ideas at our premium expo.
+                </p>
+                <p class="text-muted">
+                  <i class="bi bi-calendar-event"></i> 15 August 2025
+                </p>
+                <a href="#" class="btn btn-outline-primary">Register Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Event Card 2 -->
+          <div class="col-md-4" data-aos="flip-left">
+            <div class="card h-100 anim border-0">
+              <img
+                src="./assets/images/corp-2.jpg"
+                class="card-img-top"
+                alt="Corporate Summit"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Corporate Leaders Summit</h5>
+                <p class="card-text text-muted">
+                  Network with industry leaders and attend powerful sessions.
+                </p>
+                <p class="text-muted">
+                  <i class="bi bi-calendar-event"></i> 1 September 2025
+                </p>
+                <a href="#" class="btn btn-outline-primary">Book Seat</a>
+              </div>
+            </div>
+          </div>
+          <!-- Event Card 3 -->
+          <div class="col-md-4" data-aos="fade-up-left">
+            <div class="card h-100 anim border-0">
+              <img
+                src="./assets/images/part-2.jpg"
+                class="card-img-top"
+                alt="Birthday Bash"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Summer Party Bash</h5>
+                <p class="card-text text-muted">
+                  A fun-filled private party with live music and entertainment.
+                </p>
+                <p class="text-muted">
+                  <i class="bi bi-calendar-event"></i> 20 September 2025
+                </p>
+                <a href="#" class="btn btn-outline-primary">Join Party</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-5 bg-light">
+        <div class="container">
+          <div class="row text-center mb-5">
+            <div class="col">
+              <h2 class="fw-bold">Past Events</h2>
+              <p class="text-muted">Some of our recent memorable events.</p>
+            </div>
+          </div>
+          <div class="row g-4">
+            <!-- Past Event Example -->
+            <div class="col-md-4">
+              <div class="card h-100 anim border-0">
+                <img
+                  src="./assets/images/wed-3.jpg"
+                  class="card-img-top"
+                  alt="Past Event"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Luxury Wedding 2024</h5>
+                  <p class="card-text text-muted">
+                    A grand wedding event with 500+ guests, beautifully
+                    executed.
+                  </p>
+                  <span class="badge bg-secondary">Completed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <!-- Contact Info -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">Contact Us</h5>
+            <p><i class="bi bi-geo-alt-fill me-2"></i> Address</p>
+            <p><i class="bi bi-envelope-fill me-2"></i> occasio@mail.com</p>
+            <p><i class="bi bi-telephone-fill me-2"></i> 1234567890</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#home" class="text-decoration-none text-light">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="text-decoration-none text-light"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="text-decoration-none text-light"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#events" class="text-decoration-none text-light"
+                  >Events</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">Send Us a Message</h5>
+            <form>
+              <div class="mb-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-2">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="mb-2">
+                <textarea
+                  class="form-control"
+                  rows="2"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-sm">Send</button>
+            </form>
+          </div>
+        </div>
+        <hr class="border-light" />
+        <div class="text-center">
+          <p class="mb-0">&copy; 2025 Occasio. All Rights Reserved.</p>
+          <div class="mt-2">
+            <a href="#" class="text-light me-3"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" class="text-light me-3"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="text-light"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
