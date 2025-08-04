@@ -45,13 +45,16 @@ employee.sort((a, b) => b[4] - a[4]).forEach((emp) => console.log(emp));
 console.log("---------Expirence in ascending order-----------");
 employee.sort((a, b) => a[5] - b[5]).forEach((exp) => console.log(exp));
 
-
 //Find Employes with Highest salary
-console.log("Highest salary")
-console.log(`least salary of emp ${employee.reduce((emp1,emp2)=>emp1[4]>emp2[4] ? emp1:emp2)}`)
+console.log("Highest salary");
+console.log(employee.reduce((emp1, emp2) => (emp1[4] > emp2[4] ? emp1 : emp2)));
 // Find Employees with least salary
-console.log("least salary")
-console.log(`least salary of emp ${employee.reduce((emp1,emp2)=>emp1[4]<emp2[4] ? emp1:emp2)}`)
+console.log("least salary");
+console.log(employee.reduce((emp1, emp2) => (emp1[4] < emp2[4] ? emp1 : emp2)));
+console.log(
+  employee.reduceRight((emp1, emp2) => (emp1[4] < emp2[4] ? emp1 : emp2))
+);
+
 //Find total salary of all employees
-  console.log("Total salary of employees")
-console.log(`Total salary of emp  ${ employee.reduce((sum,emp)=>sum+emp[4] ,0)}`)
+console.log("Total salary of employees");
+console.log(employee.reduce((sum, emp) => sum + emp[4], 0));
