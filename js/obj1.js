@@ -42,3 +42,8 @@ console.log(employee);
 for (let key in employee) {
   console.log(`${key}:${employee[key]}`);
 }
+
+const { empName, empDesig, empId } = employee;
+console.log(`\nName: ${empName}`);
+console.log(`Designation: ${empDesig}`);
+console.log(`Id: ${empId}`);
