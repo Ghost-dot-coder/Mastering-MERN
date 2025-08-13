@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(#485563, #29323c);
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.outline {
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(0, 255, 102, 0.498);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px 0px black;
+}
+.input {
+  grid-column: 1/-1;
+}
+#result {
+  border: solid black 0.2rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.numbers {
+  margin: 0.2rem;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  transition: all 150ms;
+}
+.numbers:hover {
+  box-shadow: 0px 0px 10px 0px black;
+  cursor: pointer;
+}
+.outline .buttons {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.op {
+  font-weight: 900;
+  height: 50px;
+  width: 50px;
+  font-size: larger;
+  border: solid black;
+  background-color: rgba(104, 123, 21, 0.489);
+  color: rgb(0, 0, 0);
+  padding: 0.6rem;
+  margin: 0.2rem;
+  border-radius: 10px;
+  transition: all 150ms;
+}
+.op:hover {
+  box-shadow: 0px 0px 10px 0px black;
+  cursor: pointer;
+}
+.last-button {
+  display: flex;
+  grid-column: 1/-1;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.calculate {
+  background-color: green;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: all 150ms;
+}
+.clear {
+  background-color: red;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: all 150ms;
+}
+.last-button > div:hover {
+  box-shadow: 0px 0px 10px 0px black;
+  cursor: pointer;
+}
