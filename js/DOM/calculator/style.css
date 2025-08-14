@@ -74,12 +74,19 @@ body {
 }
 .calculate {
   background-color: green;
+  color: aliceblue;
   padding: 0.5rem;
   border-radius: 10px;
   transition: all 150ms;
 }
 .clear {
   background-color: red;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: all 150ms;
+}
+.backspace{
+  background-color: rgb(247, 136, 136);
   padding: 0.5rem;
   border-radius: 10px;
   transition: all 150ms;

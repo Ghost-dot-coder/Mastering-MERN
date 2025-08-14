@@ -40,12 +40,13 @@
         <div class="buttons">
           <div onclick="displayContent('+')" class="op">+</div>
           <div onclick="displayContent('-')" class="op">-</div>
-          <div onclick="displayContent('x')" class="op">x</div>
+          <div onclick="displayContent('*')" class="op">x</div>
           <div onclick="displayContent('/')" class="op">/</div>
         </div>
         <div class="last-button">
-          <div class="calculate">Calculate</div>
-          <div class="clear">Clear</div>
+          <div onclick="calcOutput()" class="calculate">Calculate</div>
+          <div onclick="calcScreenClear()" class="clear">Clear</div>
+          <div onclick="backSpace()" class="backspace">DEL</div>
         </div>
       </div>
     </div>
