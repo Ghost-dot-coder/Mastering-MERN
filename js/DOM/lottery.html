@@ -20,4 +20,22 @@
       </div>
     </div>
   </body>
+  <script>
+    const lotteryOutput = new Promise((resolve, reject) => {
+      let winLottery = 2;
+      let myLottery = Math.floor(Math.random() * 5) + 1;
+      if (winLottery == myLottery) {
+        resolve("Congratulations!!!");
+      } else {
+        reject("Better Luck next time");
+      }
+    });
+    lotteryOutput
+      .then((response) => {
+        lotteryStatus.innerHTML = response;
+      })
+      .catch((reason) => {
+        lotteryStatus.innerHTML = reason;
+      });
+  </script>
 </html>
