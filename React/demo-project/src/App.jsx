@@ -1,15 +1,15 @@
+import Company from "./Company";
 import Employee from "./Employee";
 
 function App() {
   const empNAme = "rahul";
   return (
     <>
-      <h1 className="text-center text-danger">Demo project</h1>
-      <Employee />
-      <h3>
-        Inside app component:{" "}
-        <span className="text-primary fw-bolder">{empNAme}</span>
-      </h3>
+      <h1 style={{textAlign:"center", color:"red"}}>Demo project</h1>
+      <Employee dataFromParent={empNAme} empDesignation="Deigner" empStaus />
+      <Company />
+
+
     </>
   );
 }
