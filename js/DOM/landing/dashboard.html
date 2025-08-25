@@ -23,15 +23,15 @@
   </body>
   <script>
     if (localStorage.getItem("username")) {
-      name.InnerHTML = localStorage.getItem("username");
-    }else{
-        alert("please login")
-        window.location = "login.html"
+      document.getElementById("name").innerHTML =
+        localStorage.getItem("username");
+    } else {
+      alert("please login");
+      window.location = "login.html";
     }
-    function logout(){
-        localStorage.clear()
-        window.location = "login.html"
-
+    function logout() {
+      localStorage.clear();
+      window.location = "login.html";
     }
   </script>
 </html>
