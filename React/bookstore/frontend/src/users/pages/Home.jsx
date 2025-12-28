@@ -1,9 +1,12 @@
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Footer from "../../components/Footer";
+import Header from "../../users/components/Header";
 
 const Home = () => {
   return (
     <>
+      <Header />
       <header className="flex justify-center items-center">
         <div id="main" className="flex justify-center items-center w-full">
           <div className="md:grid grid-cols-3">
@@ -154,6 +157,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };
