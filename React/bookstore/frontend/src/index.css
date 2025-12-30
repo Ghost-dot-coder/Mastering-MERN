@@ -1,25 +1,30 @@
 @import "tailwindcss";
+
 * {
-  font-family: "Tinos", serif;
+  font-family: "Montserrat", sans-serif;
 }
+
 header {
-  background-image: url("https://tse4.mm.bing.net/th/id/OIP.tY1isjU1nw_6TIyvdg_tLwHaEJ?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3");
-  height: 600px;
-  width: 100%;
+  background-image: url("https://lynnrosen.com/wp-content/uploads/2023/05/bookstore.jpg");
+  /* height: 60vh; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #main {
   height: 500px;
   width: 100%;
-  background-color: rgba(0,  0,  0,  0);
+  background-color: rgba(0, 0, 0, 0.44);
 }
-#authpage {
-  background-image: url("https://wallpapercave.com/wp/wp2939900.jpg");
+
+#auth {
+  background-image: url("https://lynnrosen.com/wp-content/uploads/2023/05/bookstore.jpg");
+  /* height: 60vh; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.44);
 }

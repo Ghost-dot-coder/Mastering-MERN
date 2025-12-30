@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../users/components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Footer from "../../components/Footer";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

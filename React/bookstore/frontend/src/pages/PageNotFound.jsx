@@ -1,25 +1,29 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const PagenotFound = () => {
+const PageNotFound = () => {
   return (
     <>
       <div className="w-full h-screen flex justify-center items-center">
         <div className="md:grid grid-cols-3">
           <div></div>
-          <div className="flex justify-center items-center flex-col p-5 md:p-0">
+          <div className="flex flex-col justify-center items-center">
             <img
-              src="https://images.squarespace-cdn.com/content/v1/6006dd43893bc73c30c23d0d/1611062696335-6GPMFGGT0LNC898XH6OS/ezgif.com-crop.gif"
-              alt="no image "
+              src="https://miro.medium.com/v2/resize:fit:1400/0*GUYQoLJ08bNdTigR.gif"
+              alt="Oops.."
             />
-            <p>Oh No!</p>
-            <h2>Look like you're lost</h2>
-            <h5>The page you are looking for is not available </h5>
-            <button
-              className="mt-4 px-4 py-3 bg-blue-800 text-white rounded hover:border
-            hover:border;blue-800 hover:bg-white hover:text-blue-800"
-            >
-              Back Home
-            </button>
+            <p className="text-center">Oh No!</p>
+            <h2 className="md:text-4xl text-2xl text-center">
+              Looks like you're lost
+            </h2>
+            <h5 className="text-center">
+              The page you're looking for is not available
+            </h5>
+            <Link className="text-center" to={"/"}>
+              <button className="mt-4 px-4 text-center py-3 bg-blue-800 text-white rounded hover:border hover:border-blue-800 hover:bg-white hover:text-blue-800">
+                Back Home
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -27,4 +31,4 @@ const PagenotFound = () => {
   );
 };
 
-export default PagenotFound;
+export default PageNotFound;
